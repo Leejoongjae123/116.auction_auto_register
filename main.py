@@ -215,6 +215,7 @@ class Thread(QThread):
             buttonRegister.click()
             time.sleep(0.5)
 
+
             while True:
                 element = browser.find_element(By.ID, "_ifrmRegProcess")  # 태그찾기
                 browser.switch_to.frame(element)  # 프레임 이동
